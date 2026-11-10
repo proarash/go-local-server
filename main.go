@@ -22,6 +22,6 @@ func main() {
 	err := http.ListenAndServe(addr, http.FileServer(http.Dir(dir)))
 
 	if err != nil {
-		log.Fatalf(err.Error())
+		log.Fatalf("%s", err.Error())
 	}
 }
